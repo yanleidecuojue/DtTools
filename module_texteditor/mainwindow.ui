@@ -49,11 +49,17 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="openFileAction"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="openFileAction">
    <property name="text">
     <string>打开</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
    </property>
   </action>
   <action name="newFileAction">
