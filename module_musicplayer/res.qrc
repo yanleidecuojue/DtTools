@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/module_musicplayer_icons">
+        <file>module_musicplayer_icons/add.png</file>
+        <file>module_musicplayer_icons/broadcast.png</file>
+        <file>module_musicplayer_icons/clear.png</file>
+        <file>module_musicplayer_icons/mute.png</file>
+        <file>module_musicplayer_icons/next.png</file>
+        <file>module_musicplayer_icons/pause.png</file>
+        <file>module_musicplayer_icons/previous.png</file>
+        <file>module_musicplayer_icons/remove.png</file>
+        <file>module_musicplayer_icons/volumn.png</file>
+        <file>module_musicplayer_icons/broadcastnow.png</file>
+    </qresource>
+</RCC>
