@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/musicplayer">
+        <file>musicplayer_icons/add.png</file>
+        <file>musicplayer_icons/broadcast.png</file>
+        <file>musicplayer_icons/broadcast_now.png</file>
+        <file>musicplayer_icons/broadcastnow.png</file>
+        <file>musicplayer_icons/clear.png</file>
+        <file>musicplayer_icons/mute.png</file>
+        <file>musicplayer_icons/next.png</file>
+        <file>musicplayer_icons/pause.png</file>
+        <file>musicplayer_icons/previous.png</file>
+        <file>musicplayer_icons/remove.png</file>
+        <file>musicplayer_icons/volumn.png</file>
+        <file>musicplayer_icons/musicplayer_background.jpg</file>
+    </qresource>
+    <qresource prefix="/homepage">
+        <file>homepage_icons/musicplayer.png</file>
+        <file>homepage_icons/screencap.png</file>
+        <file>homepage_icons/texteditor.png</file>
+        <file>homepage_icons/videoplayer.png</file>
+    </qresource>
+</RCC>
