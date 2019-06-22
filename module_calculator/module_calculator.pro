@@ -25,11 +25,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        main.cpp \
-        widget.cpp
+        calculator.cpp \
+        main.cpp
 
 HEADERS += \
-        widget.h
+    calculator.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
