@@ -7,10 +7,13 @@ HomePage::HomePage(QWidget *parent)
 {
     initUI();
     setWindowTitle("首页");
-    connect(btnMusicPlayer,SIGNAL(clicked()),this,SLOT(on_btnMusicPlayer_clicked()));
     connect(btnTextEditor,SIGNAL(clicked()),this,SLOT(on_btnTextEditor_clicked()));
+    connect(btnMusicPlayer,SIGNAL(clicked()),this,SLOT(on_btnMusicPlayer_clicked()));
+    connect(btnVideoPlayer,SIGNAL(clicked()),this,SLOT(on_btnVideoPlayer_clicked()));
+
     connect(musicPlayerWidget,SIGNAL(sendSignalOfMusicPlayer()),this,SLOT(reshow()));
     connect(textEditorWidget,SIGNAL(sendSignalOfTextEditor()),this,SLOT(reshow()));
+    connect(videoPlayerWidget,SIGNAL(sendSignalOfVideoPlayer()),this,SLOT(reshow()));
 }
 
 //文本编辑器按钮的点击事件
@@ -20,6 +23,14 @@ void HomePage::on_btnTextEditor_clicked()
     this->hide();
     //文本编辑器界面显示
     textEditorWidget->show();
+}
+
+void HomePage::on_btnVideoPlayer_clicked()
+{
+    //主界面关闭
+    this->hide();
+    //视频播放器界面显示
+    videoPlayerWidget->show();
 }
 
 //音乐播放器按钮点击事件

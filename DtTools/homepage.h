@@ -3,6 +3,7 @@
 
 #include "musicplayer.h"
 #include "texteditor.h"
+#include "videoplayer.h"
 #include <QWidget>
 #include <QPushButton>
 
@@ -31,10 +32,13 @@ public:
 private:
 
     //文本编辑器界面
-    TextEditor *textEditorWidget = new TextEditor;
+    TextEditor *textEditorWidget = new TextEditor();
 
     //音乐播放器界面
-    MusicPlayer *musicPlayerWidget = new MusicPlayer;
+    MusicPlayer *musicPlayerWidget = new MusicPlayer();
+
+    //视频播放器界面
+    VideoPlayer *videoPlayerWidget = new VideoPlayer();
 
 
 private slots:
@@ -43,6 +47,9 @@ private slots:
     void on_btnTextEditor_clicked();
     //音乐播放器按钮的点击事件
     void on_btnMusicPlayer_clicked();
+    //视频播放器按钮的点击事件
+    void on_btnVideoPlayer_clicked();
+
     void reshow();
 };
 

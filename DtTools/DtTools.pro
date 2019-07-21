@@ -5,7 +5,9 @@
 #-------------------------------------------------
 
 QT       += core gui
-QT       +=multimedia
+QT       += multimedia
+QT       += multimediawidgets
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -20,12 +22,16 @@ SOURCES += \
         main.cpp \
         homepage.cpp \
         musicplayer.cpp \
-        texteditor.cpp
+        qvideoplayer.cpp \
+        texteditor.cpp \
+        videoplayer.cpp
 
 HEADERS += \
         homepage.h \
         musicplayer.h \
-        texteditor.h
+        qvideoplayer.h \
+        texteditor.h \
+        videoplayer.h
 
 RESOURCES += \
     res.qrc

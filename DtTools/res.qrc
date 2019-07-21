@@ -3,7 +3,6 @@
         <file>musicplayer_icons/add.png</file>
         <file>musicplayer_icons/broadcast.png</file>
         <file>musicplayer_icons/broadcast_now.png</file>
-        <file>musicplayer_icons/broadcastnow.png</file>
         <file>musicplayer_icons/clear.png</file>
         <file>musicplayer_icons/mute.png</file>
         <file>musicplayer_icons/next.png</file>
@@ -18,5 +17,14 @@
         <file>homepage_icons/screencap.png</file>
         <file>homepage_icons/texteditor.png</file>
         <file>homepage_icons/videoplayer.png</file>
+    </qresource>
+    <qresource prefix="/videoplayer">
+        <file>videoplayer_icons/videoplayer_background.jpg</file>
+        <file>videoplayer_icons/broadcast.png</file>
+        <file>videoplayer_icons/broadcast_now.png</file>
+        <file>videoplayer_icons/fullscreen.png</file>
+        <file>videoplayer_icons/openfile.png</file>
+        <file>videoplayer_icons/pause.png</file>
+        <file>videoplayer_icons/volumn.png</file>
     </qresource>
 </RCC>

@@ -18,8 +18,13 @@ class MusicPlayer : public QWidget
     //很重要的一个宏，这个宏的展开将为我们的类提供信号槽机制、
     //国际化机制以及Qt提供的不基于C++ RTTI的反射能力。
     Q_OBJECT
-private:
 
+public:
+    MusicPlayer(QWidget *parent = nullptr);
+    ~MusicPlayer();
+
+
+private:
 
     QPushButton *btnBack;
 
@@ -45,8 +50,11 @@ private:
     QString durationTime;
     QString positionTime;
 
-    void initUI();//UI创建与初始化
-    void initSignalSlot();//信号与槽的关联
+    //UI创建与初始化
+    void initUI();
+    //信号与槽的关联
+    void initSignalSlot();
+
 
 private slots:
 
@@ -83,11 +91,10 @@ private slots:
     void on_sliderPosition_valueChanged(int value);
     //双击时切换播放文件
     void on_listWidget_doubleClicked(const QModelIndex &index);
+
+
 signals:
     void sendSignalOfMusicPlayer();
 
-public:
-    MusicPlayer(QWidget *parent = nullptr);
-    ~MusicPlayer();
 };
 #endif // MUSICPLAYER_H
